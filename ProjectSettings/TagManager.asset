@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fire
-  - Water
   - Thunder
+  - Ground
+  - Fire_Destroy
+  - Water_Destroy
+  - Fire_Candle
+  - Goal
+  - Thunder_generate
   layers:
   - Default
   - TransparentFX

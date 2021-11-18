@@ -11,11 +11,13 @@ public class Skill : MonoBehaviour
     public Image Fire;
     public Image Water;
     public Image Thunder;
+    public Image skill;
     void Start()
     {
         Fire.enabled = false;
         Water.enabled = false;
         Thunder.enabled = false;
+        skill.enabled = true;
     }
 
     
@@ -26,18 +28,21 @@ public class Skill : MonoBehaviour
             Fire.enabled = true;
             Water.enabled = false;
             Thunder.enabled = false;
+            skill.enabled = false;
         }
         if (Input.GetKeyDown("2"))
         {
             Fire.enabled = false;
             Water.enabled = true;
             Thunder.enabled = false;
+            skill.enabled = false;
         }
         if (Input.GetKeyDown("3"))
         {
             Fire.enabled = false;
             Water.enabled = false;
             Thunder.enabled = true;
+            skill.enabled = false;
         }
     }
 }
